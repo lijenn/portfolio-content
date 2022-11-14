@@ -60,7 +60,7 @@ aside {
 
 header {
     grid-column: 1/-1;
-    margin: 1 / all;
+    margin: 0;
     padding: 1vh;
     display: flex;
     flex-direction: column;
@@ -165,7 +165,7 @@ p {
 
 .contact {
     background-color: #79b0d3;
-    border-style: dashed-solid;
+    border-style: dashed solid;
 }
 
 .himecontact:hover {
