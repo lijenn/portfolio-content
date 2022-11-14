@@ -1,24 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <title>Contact Information</title>
   <meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="icon" href="images/hime_favicon.png">
 	<link rel="stylesheet" href="css/html5reset.css">
 	<link rel="stylesheet" href="css/styles.css">
-  <title>Contact Information</title>
+  <style>
+		@import url('https://fonts.googleapis.com/css2?family=Lexend&display=swap');
+	</style>
+  <script src="https://kit.fontawesome.com/db23d9f153.js" crossorigin="anonymous"></script>
 </head>
 <body>
   <div class="skip"><a href="#main">Skip To Main Content</a></div>
   <header>
-    <img src="images/hime_logo.png" id="logo" alt="Hime's logo.">
+    <div class="fade-in-image">
+      <img src="images/hime_logo.png" id="logo" alt="Hime's logo.">
+   </div>
       <nav>
         <ul class="nav_list">
-            <li class="nav_tab"><a href="index.html">About</a></li>
-            <li class="nav_tab"><a href="care.html">Care</a></li>
-            <li class="nav_tab"><a href="gallery.html">Gallery</a></li>
-            <li class="nav_tab nav_select"><a href="contact.html">Contact</a></li>
-        </ul>
+          <li class="nav_tab"><a href="index.html">About<i class="fa-solid fa-cat"></i></i></a></li>
+          <li class="nav_tab"><a href="care.html">Care<i class="fa-solid fa-bowl-rice"></i></a></li>
+          <li class="nav_tab"><a href="gallery.html">Gallery<i class="fa-regular fa-image"></i></a></li>
+          <li class="nav_tab nav_select"><a href="contact.html">Contact<i class="fa-solid fa-message"></i></a></li>
+          </ul>
       </nav>
   </header>
   <main id="main">
@@ -30,12 +36,47 @@
       </figure>
     </div>
     <p>
-      Reach out to me using the message fields below!
-      (Note: For my owner to code the message field here later in the project).
+    While my owner is busy with graduate school and life, sometimes she needs support in taking care of me while she is out getting the self-care that she needs. 
+    <br> For example, she has the following dates planned for travel: 12/20-12/31
     </p>
+    <p>
+    If you’re a cat-lover that’s okay with stopping by to refill my water bowl, give me a treat or two, and refill my automatic cat feeder until it is full, I’ll be all set!
+    <br> If you’re interested in being my short-term human (volunteer or paid – we can discuss further details over a few treats!), then fill out the form with your name, contact information, a time that works for you to talk about details!
+    </p>
+    <aside>
+      <u>Before you contact us, here’s what we’re looking for in a human:</u>
+      <li> Is experienced with cat-sitting for at least 1 year</li>
+      <li> Has experience with cats who are/act semi-feral</li>
+      <li> Has availability to check-in on cat at least 2x a day</li>
+      <li> Has references who will vouch for your cat-sitting experience</li>
+      <li> A good communicator who will respond to requests or questions within a reasonable timeframe</li>
+      <li> Has a driver’s license and car, in case I run out of food (or I tear through my kibble bag again and you’ll need to get a container)</li>
+      <li> Is patient with me as I can be very stubborn</li>
+    </aside>
+    <p>
+    We will do our best to respond within one or two days!
+    <br> Hope we’re a good fit for each other :)
+    </p>
+
+    <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/{form_id}" method="post">
+      <fieldset id="fs-frm-inputs">
+        <label for="full-name">Full Name</label>
+        <input type="text" name="name" id="full-name" placeholder="First and Last" required="">
+        <label for="email-address">Email Address</label>
+        <input type="email" name="_replyto" id="email-address" placeholder="email@domain.tld" required="">
+        <label for="message">Message</label>
+        <textarea rows="5" name="message" id="message" placeholder="Aenean lacinia bibendum nulla sed consectetur. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec ullamcorper nulla non metus auctor fringilla nullam quis risus." required=""></textarea>
+        <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+      </fieldset>
+      <input type="submit" value="Submit">
+    </form>
+
   </main>
   <footer>
+    <br>
     Hime's favicon/logo from: <a target="_blank" href="https://icons8.com/icon/121371/cat">Cat</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+    <br>
+    <a href="https://www.freepik.com/free-vector/cat-lover-pattern-background-design_15080931.htm#query=cartoon%20cat%20background&position=0&from_view=keyword">Background Image by rawpixel.com</a> on Freepik
     <br> Jennifer Li &copy; 2022
   </footer>
 </body>
