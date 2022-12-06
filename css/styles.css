@@ -201,15 +201,12 @@ footer {
     grid-column: 1 / all;
 }
 
-@media screen and (min-width: 785px) {
-    body {
-        text-align: left;
-    }
+@media all and (min-width: 700px){
 }
 
-@media screen and (min-width: 1025px) {
-    body {
-        display: inline-block;
-    }
 
+@media screen and (prefers-reduced-motion: reduce){
+  html{
+    scroll-behavior: auto;
+  }
 }
